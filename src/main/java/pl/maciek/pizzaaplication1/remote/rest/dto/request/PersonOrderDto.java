@@ -2,11 +2,11 @@ package pl.maciek.pizzaaplication1.remote.rest.dto.request;
 
 public class PersonOrderDto {
     private String name;
-    private Integer phone;
+    private String phone;
     private String address;
     private Integer floor;
 
-    public PersonOrderDto(String name, Integer phone, String address, Integer floor){
+    public PersonOrderDto(String name, String phone, String address, Integer floor){
         this.name = name;
         this.phone = phone;
         this.address = address;
@@ -21,11 +21,11 @@ public class PersonOrderDto {
         this.name = name;
     }
 
-    public Integer getPhone() {
+    public String getPhone() {
         return phone;
     }
 
-    public void setPhone(Integer phone) {
+    public void setPhone(String phone) {
         this.phone = phone;
     }
 
